@@ -24,20 +24,23 @@
                                     <segment title="폴리텍대학"/>
                                     <segment title="이지스퍼블리싱"/>
                                 </segments>
+                                <connections>
+                                    <action selector="sgChangeLocation:" destination="BYZ-38-t0r" eventType="valueChanged" id="Imz-mc-who"/>
+                                </connections>
                             </segmentedControl>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cbL-6i-amK">
                                 <rect key="frame" x="25" y="108" width="339" height="615"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PM-5z-RHT">
-                                <rect key="frame" x="25" y="740" width="42" height="21"/>
+                                <rect key="frame" x="25" y="738" width="339" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWr-pc-qxh">
-                                <rect key="frame" x="25" y="769" width="42" height="21"/>
+                                <rect key="frame" x="25" y="767" width="339" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -47,6 +50,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="lblLocationInfo1" destination="9PM-5z-RHT" id="NT4-AW-uSL"/>
+                        <outlet property="lblLocationInfo2" destination="xWr-pc-qxh" id="JLl-DB-xf8"/>
+                        <outlet property="myMap" destination="cbL-6i-amK" id="p7H-DN-U3c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
